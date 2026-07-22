@@ -2,6 +2,7 @@ services:
   jenkins-docker:
     image: docker:dind
     container_name: jenkins-docker
+    hostname: docker
     privileged: true
     environment:
       - DOCKER_TLS_CERTDIR=/certs
